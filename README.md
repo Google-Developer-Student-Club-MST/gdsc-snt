@@ -32,7 +32,92 @@ Many contributions will require creating a new component. To generate the boiler
 This will create a new component folder of the name you specified. Please ensure all components are moved to the src/app/components directory. If preferred, you can generate directly to the components folder by adding the directory before the name of the new component
 > ng generate component components/[name_of_component]
 
+You can now use the newly generated component files to do your work. To test your work, you will need to import the new component to the main src/app/app.component.ts file.
+For example, to add the Navbar Component, the app.component.ts file originally looked like this:
+```ts
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { LandingComponent } from './components/landing/landing.component';
 
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, LandingComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
+})
+export class AppComponent {
+  title = 'gdsc-snt';
+}
+```
+
+I then added this line:
+> import { NavbarComponent } from './components/navbar/navbar.component';
+
+and modified this line to add NavbarComponent:
+> imports: [RouterOutlet, NavbarComponent, LandingComponent],
+
+The app.component.ts file then looked like this:
+```ts
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { LandingComponent } from './components/landing/landing.component';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, NavbarComponent, LandingComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
+})
+export class AppComponent {
+  title = 'gdsc-snt';
+}
+```
+
+Then, you simply need to instantiate your component in the app.component.html file.
+For example, with the Navbar component, the app.component.html originally looked like this:
+```html
+<div>
+  <!-- content -->
+  <app-landing></app-landing>
+</div>
+```
+
+I added the following line:
+> <app-navbar></app-navbar>
+
+The app.component.html file then looked like this:
+```html
+<div>
+  <!-- Navbar -->
+  <app-navbar></app-navbar>
+
+  <!-- content -->
+  <app-landing></app-landing>
+</div>
+```
+
+Once you are done making changes, you should check that you are on the correct branch by running:
+> git branch
+
+Then, stage your changes for commit:
+> git add .
+
+Then, commit your changes:
+> git commit -m "Your descriptive commit message"
+
+Finally, push your changes:
+> git push
+
+If you recieve an error about the upstream, simply rerun the push command with the following:
+> git push --set-upstream origin [branch_name]
+
+You should then go to the remote repo on github (this page!) and hit compare branches. You can then create a pull request to start the process of merging your changes into our main branch.
+Once we have a chance to review your changes, we will complete the merge.
+
+You have successfully contributed to the project!
 
 ## Using git for version control
 Quick cheat sheet:

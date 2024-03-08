@@ -15,7 +15,7 @@ Once in the terminal, install the Angular command line utility:
 > npm install -g @angular/cli
 
 We will now clone the project. Ensure you are in the directory you would like the project to be cloned to.
-> git clone https://github.com/gdsc-mst/gdsc-snt.git
+> git clone https://github.com/Google-Developer-Student-Club-MST/gdsc-snt.git
 
 Open the folder in the current vscode window (-r reuses current window). NOTE: Include the period in the below command
 > code -r .
@@ -49,7 +49,7 @@ import { LandingComponent } from './components/landing/landing.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'gdsc-snt';
+  title = '';
 }
 ```
 
@@ -74,7 +74,7 @@ import { LandingComponent } from './components/landing/landing.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'gdsc-snt';
+  title = '';
 }
 ```
 

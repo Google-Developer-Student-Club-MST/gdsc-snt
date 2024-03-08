@@ -37,7 +37,8 @@ This will create a new component folder of the name you specified. Please ensure
 ## Using git for version control
 Quick cheat sheet:
 ```
-Note that square brackets indicate a field you need to specify. For example, in git clone you must specify the [url] yourself without the square brackets.
+Note that square brackets indicate a field you need to specify.
+For example, in git clone you must specify the [url] yourself without the square brackets.
 ----
 git clone [url]
 Pulls down a remote repository and creates a local repository

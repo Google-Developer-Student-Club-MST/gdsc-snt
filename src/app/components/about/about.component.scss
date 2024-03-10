@@ -1,0 +1,45 @@
+#join-today {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  #join-panel {
+    align-items: right;
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    justify-content: center;
+    margin: 3em;
+
+    h1 {
+      font-size: 3em;
+      width: 10em;
+    }
+
+    p {
+      font-size: 1.25em;
+      margin-bottom: 3em;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      justify-content: left;
+    }
+  }
+
+  #image-container {
+    background-color: lightgray;
+    display: flex;
+    flex: 5;
+    flex-direction: column;
+    margin: 3em;
+
+    img {
+      bottom: -2em;
+      clip-path: inset(2em 0 2em 0);
+      position: relative;
+      width: 100%;
+    }
+  }
+}

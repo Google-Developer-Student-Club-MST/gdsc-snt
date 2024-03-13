@@ -1,0 +1,18 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin: 40px;
+
+    font-size: 1.5rem;
+
+    .img-container {
+        width: auto;
+
+        img {
+            width: 100%;
+            min-width: 400px;
+        }
+    }
+}

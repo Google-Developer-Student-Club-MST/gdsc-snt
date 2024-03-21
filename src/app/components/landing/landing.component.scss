@@ -17,7 +17,33 @@
         }
     }
 }
+.green_club {
+    width: 100vw; /* make the div take up the full width of the viewport. */
+    height: 200px; 
+    background-color: #0F9D58;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 
+    .txt-container {
+        width: 95vw;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+
+        .p1 {
+            line-height: 1.5rem;
+            margin-top: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: left;
+            gap: 10px;
+        }
+    }
+}
 .buttons {
     display: flex;
     justify-content: left;

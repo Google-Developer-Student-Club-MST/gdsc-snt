@@ -17,6 +17,13 @@
         }
     }
 }
+
+.buttons {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
 .green_club {
     width: 100vw; /* make the div take up the full width of the viewport. */
     height: 200px; 
@@ -27,25 +34,29 @@
     align-items: center;
 
     .txt-container {
-        width: 95vw;
+        width: 92vw;
         height: 150px;
         display: flex;
         justify-content: space-between;
 
-        .p1 {
-            line-height: 1.5rem;
-            margin-top: 35px;
+        .heading {
+            font-size: 1.2rem;
+            width: 40vw;
         }
 
-        .buttons {
-            display: flex;
-            justify-content: left;
-            gap: 10px;
+        .button-p-container {
+            width: 50vw;
+            .p1 {
+                line-height: 1.5rem;
+                margin-top: 30px;
+                font-size: 14px;
+            }
+
+            .green-buttons {
+                display: flex;
+                justify-content: left;
+                gap: 10px;
+            }
         }
     }
-}
-.buttons {
-    display: flex;
-    justify-content: left;
-    gap: 10px;
 }

@@ -11,3 +11,17 @@
         color: #4285f4;
     }
 }
+
+.green {
+    background-color: white;
+    color: #0F9D58;
+    border: 1px solid white;
+    padding: 10px 20px;
+    transition:all 0.2s ease-out 0s;
+
+    &:hover {
+        
+        background-color: transparent;
+        color: white;
+    }
+}

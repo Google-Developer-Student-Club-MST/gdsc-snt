@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px; // Adjust as needed
+    padding: 20px; 
   }
 
   .footer-content {
@@ -19,20 +19,22 @@
   .footer-logo img{
     width: 20%; /* Set the width to the desired size */
     height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 20px; /* gap between logo and links*/
   }
   
   .footer-links {
     text-decoration: none;
-    color: black; // Your desired color
-    font-size: 15px; // Your desired size
+    color: black; // desired color
+    font-size: 15px; //  desired size
     font-weight: bold;
     display: flex;
     justify-content: center;
-    gap: 40px; // Adjust as needed
-    margin-bottom: 80px; /* Increase the bottom margin as needed */
+    gap: 40px; // Gap between each link
+    margin-bottom: 65px; /* Increase the bottom margin between links and divider line */
   }
   .footer-links a {
     text-decoration: none;
+    color: black;
   }
   
   .footer-divider {

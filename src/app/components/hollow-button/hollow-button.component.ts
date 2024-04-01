@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hollow-button',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './hollow-button.component.scss'
 })
 export class HollowButtonComponent {
-
+  @Input() customClass!: string;
 }

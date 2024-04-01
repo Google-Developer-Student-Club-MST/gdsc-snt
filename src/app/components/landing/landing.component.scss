@@ -23,3 +23,40 @@
     justify-content: left;
     gap: 10px;
 }
+
+.green_club {
+    width: 100vw; /* make the div take up the full width of the viewport. */
+    height: 275px; 
+    background-color: #0F9D58;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+    .txt-container {
+        width: 92vw;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+
+        .heading {
+            font-size: 1.2rem;
+            width: 40vw;
+        }
+
+        .button-p-container {
+            width: 50vw;
+            .p1 {
+                line-height: 1.5rem;
+                margin-top: 30px;
+                font-size: 14px;
+            }
+
+            .green-buttons {
+                display: flex;
+                justify-content: left;
+                gap: 10px;
+            }
+        }
+    }
+}

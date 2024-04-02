@@ -1,0 +1,68 @@
+
+h1{
+    text-align: center;
+    font-weight: 700;
+    size: 48px;
+    line-height: 57.6px;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 3;
+}
+
+.medNorm {
+    font-weight: 400;
+    size: 18px;
+    line-height: 3;
+}
+
+.semiBold {
+    font-weight: 600;
+    size: 16px;
+    line-height: 24px;
+}
+
+.eventsLayout {
+    width: hug(1312px);
+    height: hug(920px);
+    gap: 64px;
+}
+
+.rsvpLayout {
+    padding: 60px;
+}
+
+.center {
+    text-align: center;
+}
+
+.button {
+    background-color: white;
+    border: 1px solid #4285F4;
+    color: #4285F4;
+    padding: 12px 24px 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: white;
+    color: #4285F4;
+    border: 1px solid #4285F4;
+}
+
+.btn:hover {
+    background-color: #4285F4;
+    color: white;
+}

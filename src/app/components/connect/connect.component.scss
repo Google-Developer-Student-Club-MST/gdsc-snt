@@ -1,0 +1,36 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin: 40px;
+  gap: 80px;
+
+  font-size: 1.5rem;
+
+  .header {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: -40px;
+    color: #DB4437;
+    margin-left: 2px;
+    margin-bottom: -20px;
+    }
+
+  .img-container {
+      width: auto;
+
+      img {
+          width: 100%;
+          max-width: 1040px;
+          min-width: 616px;
+      }
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+}

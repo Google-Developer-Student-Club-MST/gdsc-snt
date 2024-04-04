@@ -1,0 +1,56 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; 
+  }
+
+  .footer-content {
+    /*centers the logo within .logo-container if needed */
+    display:flex;
+    align-items: center;
+    flex-direction: column; /* Stack children vertically */
+}
+.footer-logo {
+    display:flex;
+    justify-content: center;
+}
+  .footer-logo img{
+    width: 20%; /* Set the width to the desired size */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 20px; /* gap between logo and links*/
+  }
+  
+  .footer-links {
+    text-decoration: none;
+    color: black; // desired color
+    font-size: 15px; //  desired size
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 40px; // Gap between each link
+    margin-bottom: 65px; /* Increase the bottom margin between links and divider line */
+  }
+  .footer-links a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-divider {
+    width: 90vw; // Adjust as needed
+    max-width: 100vw;/* You can set a max-width if you want to limit how long it gets on very wide screens */
+    height: 1px;
+    background-color: black; // Your desired color
+    margin: 20px auto; // Adjust as needed
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .footer-text {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  
